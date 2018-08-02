@@ -1,0 +1,19 @@
+﻿@model List<Stadium>
+@{
+    ViewData["Title"] = "Stadiums";
+}
+
+<h1 class="impact red-text">Stadiums</h1>
+<div class="grid-three-column">
+    @foreach (var stadium in Model)
+    {
+        <ul class="padding-bottom">
+            <li><strong>Name: </strong>@stadium.Name</li>
+            <li><strong>Home Of The: </strong>@stadium.TeamName</li>
+            <li><strong>Located In: </strong>@stadium.City, @stadium.State</li>
+            <li><strong>Capacity: </strong>@stadium.Capacity</li>
+            <li><strong>Opened In: </strong>@stadium.YearBuilt</li>
+        </ul>
+
+    }
+</div>

@@ -1,0 +1,21 @@
+﻿@model IList<Player>
+@{
+    ViewData["Title"] = "Players";
+}
+
+<h2>Players</h2>
+
+
+@foreach (var player in Model)
+{
+    <ul>
+        <li>@player.LastName</li>
+        <li>@player.FirstName</li>
+        <li>@player.TeamName</li>
+        <li>@player.Position</li>
+        <li>@player.UniformNumber</li>
+    </ul>
+
+
+}
+

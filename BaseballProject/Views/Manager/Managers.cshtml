@@ -1,0 +1,17 @@
+﻿@model List<Manager>
+@{
+    ViewData["Title"] = "Managers";
+}
+
+<h1 class="impact red-text">Managers</h1>
+
+
+
+@foreach(var manager in Model)
+{
+    
+        <p class="padding-between-rows">@manager.FirstName @manager.LastName, <strong>@manager.TeamName</strong></p>
+        
+    
+
+}

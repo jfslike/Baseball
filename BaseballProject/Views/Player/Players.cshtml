@@ -1,0 +1,34 @@
+﻿@model IList<Player>
+@{
+    ViewData["Title"] = "Players";
+}
+
+<h1 class="red-text impact">Players</h1>
+
+
+<table class="table-striped " width="700">
+    <thead class="impact">
+        <tr>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Team</th>
+            <th>Position</th>
+            <th width="130">Uniform Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var player in Model)
+        {
+        <tr>
+            <td class="padding-between-rows">@player.LastName</td>
+            <td>@player.FirstName</td>
+            <td>@player.TeamName</td>
+            <td>@player.Position</td>
+            <td>@player.UniformNumber</td>
+        </tr>
+
+
+        }
+    </tbody>
+
+</table>

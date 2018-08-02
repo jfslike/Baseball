@@ -1,0 +1,32 @@
+﻿.red-text{
+    padding-top: 50px;
+    color: red;
+}
+
+.impact{
+    font-family:Impact;
+}
+
+.padding-between-cols{
+    
+    padding-right: 50px;
+}
+
+.padding-between-rows{
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.grid-three-column{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    padding-bottom: 100px;
+}
+
+.padding-bottom{
+    padding-bottom: 50px;
+}
+
+.home-page-links{
+    font-size:larger;
+}

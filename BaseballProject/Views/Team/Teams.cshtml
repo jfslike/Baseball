@@ -1,0 +1,29 @@
+﻿@model List<Team>
+@{
+    ViewData["Title"] = "Teams";
+}
+
+<h1 class="impact red-text">Teams</h1>
+
+<table class="table-striped table-bordered" width="500">
+    <thead>
+        <tr class="impact">
+            <th>Name</th>
+            <th>Location</th>
+            <th>Established</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var team in Model)
+        {
+            <tr>
+                <td>@team.Name</td>
+                <td>@team.City, @team.State</td>
+                <td>@team.FoundedYear</td>
+            </tr>
+
+        }
+    </tbody>
+
+
+</table>
